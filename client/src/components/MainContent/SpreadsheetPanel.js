@@ -7,7 +7,8 @@ export default function SpreadsheetPanel() {
            margin: 10,
             boxSizing: 'borderBox',
             height: '80vh',
-            backgroundColor: '#F5F5F5'
+            backgroundColor: '#F5F5F5',
+            overflow: 'scroll'
         }
     }
     return (

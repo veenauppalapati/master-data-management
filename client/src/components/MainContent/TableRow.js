@@ -4,9 +4,11 @@ export default function TableRow() {
     const styles={
         rowStyling: {
             borderBottom: 'black dotted 2px',
+            
         },
         columnStyling:{
             borderRight: 'black dotted 2px',
+            
         }
     }
     return (

@@ -33,6 +33,15 @@ export default function Table() {
                         <TableRow />
                         <TableRow />
                         <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        
                     </tbody>
                 </table>
             </div>
