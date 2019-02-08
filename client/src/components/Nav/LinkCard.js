@@ -5,6 +5,9 @@ export default function LinkCard(props) {
   const styles = {
     linkstyle: {
       fontSize: '2.5vh',
+      color: '#28648C',
+      textDecoration: 'underline',
+      fontWeight:500
     }
   }
 
