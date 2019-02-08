@@ -53,7 +53,7 @@ export default function ButtonFrame() {
         // This div frame is holding all the buttons toghether
         <div className='col-md-12' style={styles.frameStyle}>
             <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyle} iconName="fas fa-plus" buttonName="New"/>
-            <Button bootstrapClasses=" btn btn-primary" style={styles.buttonStyle} buttonName="Edit" />
+            <Button bootstrapClasses=" btn btn-primary" style={styles.buttonStyle} iconName="fas fa-pencil" buttonName="Edit" />
             <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyle} buttonName="Delete" />
             <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyleGreen} buttonName="Submit" />
             <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyleRed} buttonName="Cancel" />

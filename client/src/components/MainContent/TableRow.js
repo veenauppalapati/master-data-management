@@ -9,7 +9,8 @@ export default function TableRow(props) {
         },
         cell1Style:{
             color:'red',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            height:15
         }
        
     }

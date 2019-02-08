@@ -5,11 +5,13 @@ export default function TableCell(props) {
        
         columnStyling:{
             borderRight: 'black dotted 2px',
-            fontSize:'14px', 
+            // fontSize:'14px', 
             fontWeight:'',
-            textAlign:'center', 
+            textAlign:'center',
+            height: 20 
             // paddingTop:2,
             // paddingBottom:2
+          
         },
         
     }
