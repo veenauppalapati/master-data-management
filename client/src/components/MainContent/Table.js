@@ -6,6 +6,7 @@ const styles = {
         textAlign: 'center',
         padding: 5,
         borderBottom: 'solid black 2px',
+        borderRight: 'dotted black 2px',
         borderTop: 'none'
     },
     cellStyling: {
@@ -27,13 +28,7 @@ export default class Table extends React.Component {
 
     componentDidMount = () => {
         //Get data after component mounts
-        /**
-         * Currency	Symbol	Description	Exchange Rate
-  GBP	$1	British Pound	0.70 USD
-  AUD			
-  CAD			
-  INR			
-         */
+
         //axios.get
         const dummyData = [
             {
@@ -107,7 +102,12 @@ export default class Table extends React.Component {
                     {/* Body section-- loads the TableRow Component */}
                     <tbody>
                         {
-                            this.state.tableData.map(e => <TableRow cell1={e.currency} cell2={e.symbol} cell3={e.description} cell4={e.exchangeRate} style={styles.cellStyling} />)
+                            this.state.tableData.map(e => 
+                            <TableRow 
+                                cell1={e.currency} 
+                                cell2={e.symbol} 
+                                cell3={e.description} 
+                                cell4={e.exchangeRate}  />)
                         }
                         <TableRow />
                         

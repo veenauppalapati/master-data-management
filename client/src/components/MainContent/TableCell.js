@@ -17,9 +17,7 @@ export default function TableCell(props) {
     }
   return (
     // Table cell component
-      <td style={styles.columnStyling}>{props.content}</td>
-    
-   
+      <td style={styles.columnStyling}>{props.content}</td> 
   )
 }
  

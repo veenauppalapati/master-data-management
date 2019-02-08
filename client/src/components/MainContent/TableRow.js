@@ -16,7 +16,7 @@ export default function TableRow(props) {
     }
     return (
         <tr style={styles.rowStyling}>
-            <TableCell content={props.cell1} style={styles.cell1Style}/>
+            <TableCell content={props.cell1} />
             <TableCell content={props.cell2} />
             <TableCell content={props.cell3} />
             <TableCell content={props.cell4}/>
