@@ -10,11 +10,10 @@ export default function MainFrame() {
             padding:0,
             boxSizing:'borderBox',
             height:'100vh',
-            // width: '100%'
+            width: '100%'
         }
     }
-  return (
-  
+  return ( 
     <div className="col-md-9" style={styles.container}>
         <SpreadsheetPanel />
         <ButtonFrame />

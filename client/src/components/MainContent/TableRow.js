@@ -1,6 +1,7 @@
 import React from 'react'
+import TableCell from './TableCell';
 
-export default function TableRow() {
+export default function TableRow(props) {
     const styles={
         rowStyling: {
             borderBottom: 'black dotted 2px',
@@ -8,15 +9,18 @@ export default function TableRow() {
         },
         columnStyling:{
             borderRight: 'black dotted 2px',
-            
+            fontSize:'12px', 
+            fontWeight:'bold',
+            textAlign:'center', 
+       
         }
     }
     return (
         <tr style={styles.rowStyling}>
-            <td style={styles.columnStyling}></td>
-            <td style={styles.columnStyling}></td>
-            <td style={styles.columnStyling}></td>
-            <td style={styles.columnStyling}></td>
+            <TableCell />
+            <TableCell />
+            <TableCell />
+            <TableCell />
         </tr>
     )
 }
