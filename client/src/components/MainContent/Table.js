@@ -7,14 +7,15 @@ const styles = {
         padding: 5,
         borderBottom: 'solid black 2px',
         borderRight: 'dotted black 2px',
-        borderTop: 'none'
+        borderTop: 'none',
+        
     },
-    cellStyling: {
+    cellStyle: {
         borderRight: 'black dotted 2px',
         fontSize: '14px',
         fontWeight: 'bold',
         textAlign: 'center',
-        color: 'red'
+        backgroundColor: 'black'
     }
 
 };
@@ -22,9 +23,6 @@ export default class Table extends React.Component {
     state = {
         tableData: []
     }
-
-
-
 
     componentDidMount = () => {
         //Get data after component mounts
@@ -77,7 +75,7 @@ export default class Table extends React.Component {
     render() {
         return (
             <div>
-                {/* This is the Title for the spreadsheet panel */}
+                {/* This is the Title bar  for the spreadsheet panel */}
                 <h2
                     style={{
                         fontSize: '20px',
@@ -102,23 +100,19 @@ export default class Table extends React.Component {
                     {/* Body section-- loads the TableRow Component */}
                     <tbody>
                         {
-                            this.state.tableData.map(e => 
-                            <TableRow 
-                                cell1={e.currency} 
-                                cell2={e.symbol} 
-                                cell3={e.description} 
-                                cell4={e.exchangeRate}  />)
+                            this.state.tableData.map(e =>
+                                <TableRow
+                                    cell1={e.currency}
+                                    cell2={e.symbol}
+                                    cell3={e.description}
+                                    cell4={e.exchangeRate} />)
                         }
-                        <TableRow />
-                        
+                            <TableRow />
+
                     </tbody>
                 </table>
             </div>
-
-
         )
     }
-
-
 }
 
