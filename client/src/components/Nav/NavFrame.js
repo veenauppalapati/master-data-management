@@ -11,7 +11,6 @@ export default function NavFrame({currencyBacground,
             padding: 0,
             boxSizing: 'borderBox',
             height: '100vh',
-            // padding: 20
         },
         cardStyling: {
             borderColor: 'white',
@@ -20,13 +19,20 @@ export default function NavFrame({currencyBacground,
         }
     }
 
-
-    return (
-        
-        <div className="col-md-3" style={styles.navContainerStyling}>
-        
+    return (   
+        //  This section consists of the Nav Conents
+        <div className="col-md-3" style={styles.navContainerStyling}>    
             <div className="card" style={styles.cardStyling}>
-                <div className="card-body" style={{ paddingLeft: 25, margin: 2, fontSize:'3vh'}}>Master Data Management</div>
+                {/* Nav Bar Title */}
+                <div className="card-body" 
+                    style={{ 
+                        paddingLeft: 25, 
+                        margin: 2, 
+                        fontSize:'3vh', 
+                        fontWeight:300}}>Master Data Management
+                </div>
+                
+                {/* Nav Bar Elements */}
                 <div className="card-body">
                     <LinkCard linkAddress="#" name="Currency Master" backgroundColor={currencyBacground} 
                     activeTabBackgroundColor={activateCurrency}/>

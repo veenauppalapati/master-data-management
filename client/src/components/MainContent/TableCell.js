@@ -5,15 +5,19 @@ export default function TableCell(props) {
        
         columnStyling:{
             borderRight: 'black dotted 2px',
-            fontSize:'12px', 
-            fontWeight:'bold',
+            fontSize:'14px', 
+            fontWeight:'',
             textAlign:'center', 
-       
-        }
+            // paddingTop:2,
+            // paddingBottom:2
+        },
+        
     }
   return (
+    // Table cell component
+      <td style={styles.columnStyling}>{props.content}</td>
     
-      <td style={styles.columnStyling}></td>
    
   )
 }
+ 

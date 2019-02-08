@@ -5,22 +5,20 @@ export default function TableRow(props) {
     const styles={
         rowStyling: {
             borderBottom: 'black dotted 2px',
-            
+           
         },
-        columnStyling:{
-            borderRight: 'black dotted 2px',
-            fontSize:'12px', 
-            fontWeight:'bold',
-            textAlign:'center', 
-       
+        cell1Style:{
+            color:'red',
+            fontWeight: 'bold'
         }
+       
     }
     return (
         <tr style={styles.rowStyling}>
-            <TableCell />
-            <TableCell />
-            <TableCell />
-            <TableCell />
+            <TableCell content={props.cell1} style={styles.cell1Style}/>
+            <TableCell content={props.cell2} />
+            <TableCell content={props.cell3} />
+            <TableCell content={props.cell4}/>
         </tr>
     )
 }

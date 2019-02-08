@@ -9,12 +9,13 @@ const styles = {
       boxSizing: 'borderBox'
     }
   }
-
+// This component puts together all the components.  This is the main Component that comes after the app.js
 export default class WholePage extends Component {
+
     state= {
         currentSelection: "Currency Master",
       }
-    
+
       activateCurrency = () => {
         this.setState({currentSelection: 'Currency Master'})
       }
@@ -28,11 +29,11 @@ export default class WholePage extends Component {
       }
     
       render() {
-    
         return (
           <div className="App">
             <div className="container-fluid" style={styles.mainAppStyling}>
-              <div className="row"> 
+              <div className="row" style={{margin:0}}> 
+                {/* This Component loads the Nav Panel on the left */}
                 <NavFrame 
                   currencyBacground={this.state.currentSelection=="Currency Master"? '#D6D5D5': 'white'}
                   bankBacground={this.state.currentSelection=="Bank Master"? '#D6D5D5': 'white'}
@@ -41,6 +42,7 @@ export default class WholePage extends Component {
                   activateBank={this.activateBank}
                   activateForecast={this.activateForecast}
                 />
+                {/* This Component loads the Right Side Panel, the main panel on the right */}
                 <MainFrame />
               </div>
             </div>

@@ -3,37 +3,42 @@ import Button from './Button';
 
 export default function ButtonFrame() {
     const styles = {
-        
-        
-            frameStyle: {          
-              margin:10,
-              backgroundColor: '#F5F5F5',
-              display: 'flex',
-              flex:'wrap',
-              flexDirection: 'row',
-              justifyContent: 'center',
-              width:'100%'
-          },
+
+        frameStyle: {
+            marginRight: -1,
+            backgroundColor: '#F5F5F5',
+            display: 'flex',
+            flex: 'wrap',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            
+        },
 
         buttonStyle: {
             backgroundColor: "#01A2FF",
-            width: '9em',
-            margin: 8,
-            textAlign: 'center'
+            width: '8em',
+            margin: 7,
+            textAlign: 'center',
+            border: 'none',
+            boxShadow: '0 2px 10px grey'
         },
 
         buttonStyleGreen: {
             backgroundColor: "#61D836",
-            width: '9em',
-            margin: 8,
-            textAlign: 'center'
+            width: '8em',
+            margin: 7,
+            textAlign: 'center',
+            border: 'none',
+            boxShadow: '0 2px 10px grey'
         },
 
         buttonStyleRed: {
             backgroundColor: "#EE220D",
-            width: '9em',
-            margin: 8,
-            textAlign: 'center'
+            width: '8em',
+            margin: 7,
+            textAlign: 'center',
+            border: 'none',
+            boxShadow: '0 2px 10px grey'
         },
 
         cardStyling: {
@@ -45,19 +50,14 @@ export default function ButtonFrame() {
     }
 
     return (
-        
-                <div className="container">
-                    <div className="row">
-                    <div className='col-xs-12' style= {styles.frameStyle}>
-                        <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyle} buttonName="New" iconName="glyphicon glyphicon-pluspro"/>
-                        <Button bootstrapClasses=" btn btn-primary" style={styles.buttonStyle} buttonName="Edit" />
-                        <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyle} buttonName="Delete" />
-                        <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyleGreen} buttonName="Submit" />
-                        <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyleRed} buttonName="Cancel" />
-                        </div>
-                        
-                    </div>
-                </div>
-         
+        // This div frame is holding all the buttons toghether
+        <div className='col-md-12' style={styles.frameStyle}>
+            <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyle} buttonName="New"/>
+            <Button bootstrapClasses=" btn btn-primary" style={styles.buttonStyle} buttonName="Edit" />
+            <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyle} buttonName="Delete" />
+            <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyleGreen} buttonName="Submit" />
+            <Button bootstrapClasses="btn btn-primary " style={styles.buttonStyleRed} buttonName="Cancel" />
+        </div>
+
     )
 }
