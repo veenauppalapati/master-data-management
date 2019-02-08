@@ -9,10 +9,7 @@ export default function TableRow(props) {
 
         columnStyling:{
             borderRight: 'black dotted 2px', 
-            textAlign:'center',
-            // height: 20 
-            // paddingTop:2,
-            // paddingBottom:2  
+            textAlign:'center'
         },
 
         cell1Style:  {

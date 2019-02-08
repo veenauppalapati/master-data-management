@@ -7,21 +7,13 @@ const styles = {
         padding: 5,
         borderBottom: 'solid black 2px',
         borderRight: 'dotted black 2px',
-        borderTop: 'none',
-        
-    },
-    cellStyle: {
-        borderRight: 'black dotted 2px',
-        fontSize: '14px',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        backgroundColor: 'black'
+        borderTop: 'none',    
     }
-
 };
 export default class Table extends React.Component {
     state = {
-        tableData: []
+        tableData: [],
+
     }
 
     componentDidMount = () => {
@@ -107,6 +99,14 @@ export default class Table extends React.Component {
                                     cell3={e.description}
                                     cell4={e.exchangeRate} />)
                         }
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
                             <TableRow />
 
                     </tbody>
